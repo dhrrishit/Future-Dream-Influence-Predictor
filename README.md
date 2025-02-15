@@ -2,7 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/downloads/)
 [![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)](requirements.txt)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) <!-- Optional: Add a LICENSE file and link here -->
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](license) <!-- Optional: Add a LICENSE file and link here -->
 
 ## Overview
 
