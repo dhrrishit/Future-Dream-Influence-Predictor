@@ -133,3 +133,9 @@ Future decisions might be influenced by a cautious optimism. You may be drawn to
 - ```Commit your changes (git commit -am 'Add some feature').```
 - ```Push to the branch (git push origin feature/your-feature).```
 - ```Open a Pull Request.```
+
+## Author
+**Dhrrishit Deka**
+- **Email**: dhrrishitdeka13@gmail.com
+- **GitHub**: https://github.com/dhrrishit
+- **Repository**: https://github.com/dhrrishit/Future-Dream-Influence-Predictor
