@@ -1,4 +1,4 @@
-# Future Influence Predictor
+# Future Dream Influence Predictor
 
 ![Future Influence Predictor Banner](banner.png)
 > **Note:** The banner above is a text-based image (ASCII art or a text graphic) used as a visual placeholder. It does not contain any graphical content beyond stylized text.
@@ -69,3 +69,4 @@
 
 ## Project Structure
 
+future_influence_predictor/ ├── requirements.txt # List of project dependencies ├── main.py # Main application script (CLI interface) ├── nlp_utils.py # NLP utility functions (theme extraction, sentiment analysis) ├── gpt_predictor.py # Module for GPT-based future influence prediction ├── visualization.py # Visualization utilities (sentiment trends, word clouds) ├── personality.py # Module for collecting personality data via questionnaire ├── app.py # (Optional) Streamlit web interface for interactive usage └── dream_log.csv # (Optional) CSV file for logging dream entries
