@@ -1,12 +1,11 @@
-## Future Influence Predictor
+## Future Dream Influence Predictor
 
-Note: The banner above is a text-based image (e.g., ASCII art or a text graphic) used as a visual placeholder. It contains only stylized text.
 
-Project Description
+##Project Description
 
 Future Influence Predictor is an experimental Python project that analyzes your dream descriptions along with personality data to predict how recurring dream elements might influence your future decisions. The application leverages Natural Language Processing (NLP) with spaCy and NLTK (VADER) to extract themes and sentiments from your dreams and then uses a GPT-based model (via OpenAI) to generate creative, personalized predictions.
 
-Table of Contents
+##Table of Contents
 
 - Features
 - Requirements
@@ -20,7 +19,7 @@ Table of Contents
 - License
 - Contact
 
-Features
+##Features
 
 - Dream Analysis: Extracts recurring themes from dream descriptions using spaCy.
 - Sentiment Evaluation: Analyzes dream mood with NLTK's VADER sentiment analyzer.
@@ -29,7 +28,7 @@ Features
 - Visualization: Displays dream sentiment trends over time and creates word clouds of extracted themes to aid in understanding dream patterns.
 - Data Logging: Optionally logs dream entries to a CSV file (dream_log.csv) for tracking recurring patterns and building a personal dream journal.
 
-Requirements
+##Requirements
 
 - Python Version: 3.7 or higher
 - Key Libraries:
@@ -41,10 +40,10 @@ Requirements
   - wordcloud (for generating word clouds)
   - streamlit (optional, for a web-based interactive interface)
 
-Installation
+##Installation
 
 1. Clone the Repository:
-    git clone https://github.com/yourusername/future-influence-predictor.git
+    git clone [https://github.com/yourusername/future-influence-predictor.git](https://github.com/dhrrishit/-Future-Dream-Influence-Predictor)
     cd future-influence-predictor
     Replace yourusername with your actual GitHub username or the repository owner's username.
 
