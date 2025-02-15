@@ -55,7 +55,20 @@ Follow these steps to get the Future Dream Influence Predictor running on your l
     ```
 
 3. **Install dependencies:**
-   ```pip install -r requirements.txt```
+   ```
+   pip install -r requirements.txt
+   ```
 
-4. **Download spaCy English model:**
-   ```python -m spacy download en_core_web_sm```  
+5. **Download spaCy English model:**
+   ```
+   python -m spacy download en_core_web_sm
+   ```
+
+6. **Set up your Google Gemini API Key:**
+
+-    Open the gpt_predictor.py file.
+-    Replace "YOUR_API_KEY_HERE" with your actual Gemini API key in the line:
+
+   ```
+GOOGLE_API_KEY = "YOUR_API_KEY_HERE"
+```
