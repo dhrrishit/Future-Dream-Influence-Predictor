@@ -43,7 +43,7 @@ Future Influence Predictor is an experimental Python project that analyzes your 
 ## Installation
 
 1. Clone the Repository:
-    git clone [https://github.com/yourusername/future-influence-predictor.git](https://github.com/dhrrishit/-Future-Dream-Influence-Predictor)
+    git clone https://github.com/dhrrishit/-Future-Dream-Influence-Predictor
     cd future-dream-influence-predictor
 
 2. Install Dependencies:
@@ -58,17 +58,17 @@ Future Influence Predictor is an experimental Python project that analyzes your 
     nltk.download('vader_lexicon')
     This downloads the VADER lexicon, required for sentiment analysis using NLTK.
 
-Project Structure
+##Project Structure
 
 future_influence_predictor/
-├── requirements.txt       # List of project dependencies
-├── main.py                # Main application script (CLI interface)
-├── nlp_utils.py           # NLP utility functions (theme extraction, sentiment analysis)
-├── gpt_predictor.py       # Module for GPT-based future influence prediction
-├── visualization.py       # Visualization utilities (sentiment trends, word clouds)
-├── personality.py         # Module for collecting personality data via questionnaire
-├── app.py                 # (Optional) Streamlit web interface for interactive usage
-└── dream_log.csv          # (Optional) CSV file for logging dream entries
+# ├── requirements.txt       # List of project dependencies
+# ├── main.py                # Main application script (CLI interface)
+# ├── nlp_utils.py           # NLP utility functions (theme extraction, sentiment analysis)
+# ├── gpt_predictor.py       # Module for GPT-based future influence prediction
+# ├── visualization.py       # Visualization utilities (sentiment trends, word clouds)
+# ├── personality.py         # Module for collecting personality data via questionnaire
+# ├── app.py                 # (Optional) Streamlit web interface for interactive usage
+# └── dream_log.csv          # (Optional) CSV file for logging dream entries
 
 Usage
 
