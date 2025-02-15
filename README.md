@@ -47,4 +47,15 @@ Follow these steps to get the Future Dream Influence Predictor running on your l
    git clone https://github.com/dhrrishit/Future-Dream-Influence-Predictor.git
    cd Future-Dream-Influence-Predictor
    ```
-   
+
+2. **Create a virtual environment (recommended):**
+    ```python -m venv venv
+     source venv/bin/activate  # On Linux/macOS
+     venv\Scripts\activate  # On Windows
+    ```
+
+3. **Install dependencies:**
+   ```pip install -r requirements.txt```
+
+4. **Download spaCy English model:**
+   ```python -m spacy download en_core_web_sm```  
