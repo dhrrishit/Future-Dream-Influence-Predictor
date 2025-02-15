@@ -106,8 +106,8 @@ Your dream entry will be saved to dream_log.csv.
 - wordcloud: For generating word cloud visualizations of dream themes.
 - streamlit: (Listed in requirements but not currently used in the core functionality shown in the provided files. Potentially for future UI enhancements.)
 
---- Example --- 
-=== Future Influence Predictor ===
+
+=== Example of Future Dream Influence Predictor ===
 Enter your dream description: I dreamed I was flying over a lush green forest, but suddenly a storm appeared and I started falling. I felt scared and lost.
 ... (Word cloud visualization will appear) ...
 Please answer the following questions on a scale from 1 (low) to 10 (high):
