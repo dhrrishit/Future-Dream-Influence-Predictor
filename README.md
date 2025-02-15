@@ -10,7 +10,6 @@
 
 The **Future Dream Influence Predictor** is a Python-based application that analyzes your dreams to extract key themes, assess sentiment, and creatively predict how these dream elements might influence your future decisions.  Leveraging Natural Language Processing (NLP) with spaCy and NLTK, sentiment analysis with VADER, and the powerful Gemini Pro model from Google AI, this project offers a fun and insightful look into the potential impact of your subconscious.
 
-- Keywords visualisation (img1.png)
 
 **Imagine:** You've just had a vivid dream. You describe it to the predictor, and it not only tells you the dominant themes and the overall feeling of the dream but also gives you a creative glimpse into how these dream elements might play out in your waking life.
 
