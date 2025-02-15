@@ -138,4 +138,6 @@ Future decisions might be influenced by a cautious optimism. You may be drawn to
 **Dhrrishit Deka**
 - **Email**: dhrrishitdeka13@gmail.com
 - **GitHub**: https://github.com/dhrrishit
+- **LinkedIn**: https://www.linkedin.com/in/dhrrishitdeka/
+- **X Twitter**: https://x.com/dhrrishitdeka
 - **Repository**: https://github.com/dhrrishit/Future-Dream-Influence-Predictor
