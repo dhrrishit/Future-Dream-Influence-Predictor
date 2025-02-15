@@ -1,11 +1,11 @@
 ## Future Dream Influence Predictor
 
 
-##Project Description
+## Project Description
 
 Future Influence Predictor is an experimental Python project that analyzes your dream descriptions along with personality data to predict how recurring dream elements might influence your future decisions. The application leverages Natural Language Processing (NLP) with spaCy and NLTK (VADER) to extract themes and sentiments from your dreams and then uses a GPT-based model (via OpenAI) to generate creative, personalized predictions.
 
-##Table of Contents
+## Table of Contents
 
 - Features
 - Requirements
@@ -19,7 +19,7 @@ Future Influence Predictor is an experimental Python project that analyzes your 
 - License
 - Contact
 
-##Features
+## Features
 
 - Dream Analysis: Extracts recurring themes from dream descriptions using spaCy.
 - Sentiment Evaluation: Analyzes dream mood with NLTK's VADER sentiment analyzer.
@@ -28,7 +28,7 @@ Future Influence Predictor is an experimental Python project that analyzes your 
 - Visualization: Displays dream sentiment trends over time and creates word clouds of extracted themes to aid in understanding dream patterns.
 - Data Logging: Optionally logs dream entries to a CSV file (dream_log.csv) for tracking recurring patterns and building a personal dream journal.
 
-##Requirements
+## Requirements
 
 - Python Version: 3.7 or higher
 - Key Libraries:
@@ -40,20 +40,17 @@ Future Influence Predictor is an experimental Python project that analyzes your 
   - wordcloud (for generating word clouds)
   - streamlit (optional, for a web-based interactive interface)
 
-##Installation
+## Installation
 
 1. Clone the Repository:
     git clone [https://github.com/yourusername/future-influence-predictor.git](https://github.com/dhrrishit/-Future-Dream-Influence-Predictor)
-    cd future-influence-predictor
-    Replace yourusername with your actual GitHub username or the repository owner's username.
+    cd future-dream-influence-predictor
 
 2. Install Dependencies:
     pip install -r requirements.txt
-    This command will install all the necessary Python libraries listed in the requirements.txt file.
 
 3. Download spaCy's English Model:
     python -m spacy download en_core_web_sm
-    This downloads the small English language model for spaCy, which is used for NLP tasks.
 
 4. Download NLTK VADER Lexicon:
     Run the following commands in your Python interpreter or include them in your script once:
