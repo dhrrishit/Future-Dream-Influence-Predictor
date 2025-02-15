@@ -68,10 +68,9 @@ Follow these steps to get the Future Dream Influence Predictor running on your l
 
 -    Open the gpt_predictor.py file.
 -    Replace "YOUR_API_KEY_HERE" with your actual Gemini API key in the line:
+  
+   ```GOOGLE_API_KEY = "YOUR_API_KEY_HERE"```
 
-     ```
-    GOOGLE_API_KEY = "YOUR_API_KEY_HERE"
-    ```
 
 ## Running the Predictor
 
