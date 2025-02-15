@@ -105,3 +105,21 @@ Your dream entry will be saved to dream_log.csv.
 - seaborn: Built on top of matplotlib, for enhanced data visualizations (sentiment plots).
 - wordcloud: For generating word cloud visualizations of dream themes.
 - streamlit: (Listed in requirements but not currently used in the core functionality shown in the provided files. Potentially for future UI enhancements.)
+
+--- Example --- 
+=== Future Influence Predictor ===
+Enter your dream description: I dreamed I was flying over a lush green forest, but suddenly a storm appeared and I started falling. I felt scared and lost.
+... (Word cloud visualization will appear) ...
+Please answer the following questions on a scale from 1 (low) to 10 (high):
+How much do you rely on intuition for decision-making? 7
+How high is your typical stress level? 6
+
+Extracted Dream Themes: ['lush', 'fly', 'green', 'forest', 'dream', 'appear', 'storm', 'start', 'fall', 'lose', 'scare']
+Dream Sentiment Scores: {'neg': 0.259, 'neu': 0.538, 'pos': 0.203, 'compound': -0.1779}
+
+--- Future Influence Prediction ---
+Based on your dream, the themes of flying, lush greenery, and a sudden storm, combined with a slightly negative sentiment and moderate intuition and stress levels, here's a potential future influence prediction:
+
+Your dream may reflect a current period of ambition and exploration (flying over a lush forest), but also underlying anxieties or potential challenges on the horizon (the sudden storm and falling). Your intuition score suggests you are somewhat guided by your gut feelings, which might be heightened by the dream's unsettling elements. The moderate stress level indicates you are likely equipped to handle challenges, but the dream could be a signal to prepare for unexpected turbulence in your plans.
+
+Future decisions might be influenced by a cautious optimism. You may be drawn to opportunities that initially seem promising and expansive, but you might also be more aware of potential risks and setbacks. This dream could encourage you to plan carefully, consider contingency plans, and not be overly swayed by initial excitement without assessing potential storms ahead. Pay attention to your intuition but also balance it with practical considerations as you navigate upcoming decisions.
