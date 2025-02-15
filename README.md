@@ -67,6 +67,24 @@
     nltk.download('vader_lexicon')
     ```
 
-## Project Structure
 
-future_influence_predictor/ ├── requirements.txt # List of project dependencies ├── main.py # Main application script (CLI interface) ├── nlp_utils.py # NLP utility functions (theme extraction, sentiment analysis) ├── gpt_predictor.py # Module for GPT-based future influence prediction ├── visualization.py # Visualization utilities (sentiment trends, word clouds) ├── personality.py # Module for collecting personality data via questionnaire ├── app.py # (Optional) Streamlit web interface for interactive usage └── dream_log.csv # (Optional) CSV file for logging dream entries
+## Usage
+
+### Running the CLI Application
+
+To run the application from the command line, execute:
+
+```bash
+python main.py
+
+The application will prompt you to:
+
+Enter your dream description.
+Answer a couple of personality questions.
+It will then:
+
+Extract dream themes and analyze sentiment.
+Generate a GPT-based prediction.
+Optionally log your entry to dream_log.csv and visualize sentiment trends if multiple entries exist.
+Optional: Running the Streamlit Interface
+For a web-based interactive interface, run:
