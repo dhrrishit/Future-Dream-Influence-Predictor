@@ -128,8 +128,8 @@ Future decisions might be influenced by a cautious optimism. You may be drawn to
 
 *Contributions are welcome! If you have ideas for improvements, bug fixes, or new features, please feel free to:*
 
-```Fork the repository```
-```Create a new branch for your feature (git checkout -b feature/your-feature).```
-```Commit your changes (git commit -am 'Add some feature').```
-```Push to the branch (git push origin feature/your-feature).```
-```Open a Pull Request.```
+- ```Fork the repository```
+- ```Create a new branch for your feature (git checkout -b feature/your-feature).```
+- ```Commit your changes (git commit -am 'Add some feature').```
+- ```Push to the branch (git push origin feature/your-feature).```
+- ```Open a Pull Request.```
