@@ -1,4 +1,4 @@
-Future Influence Predictor
+## Future Influence Predictor
 
 Note: The banner above is a text-based image (e.g., ASCII art or a text graphic) used as a visual placeholder. It contains only stylized text.
 
