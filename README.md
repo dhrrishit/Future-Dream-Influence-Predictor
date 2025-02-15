@@ -74,8 +74,7 @@
 
 To run the application from the command line, execute:
 
-```bash
-python main.py
+```bash python main.py```
 
 The application will prompt you to:
 
@@ -88,3 +87,23 @@ Generate a GPT-based prediction.
 Optionally log your entry to dream_log.csv and visualize sentiment trends if multiple entries exist.
 Optional: Running the Streamlit Interface
 For a web-based interactive interface, run:
+
+```streamlit run app.py```
+
+This launches a web app where you can input your dream details, provide personality scores, and view the generated prediction interactively.
+
+Configuration
+OpenAI API Key:
+In the gpt_predictor.py file, replace "YOUR_OPENAI_API_KEY" with your actual OpenAI API key.
+Personality Data:
+You can customize the personality questionnaire in personality.py to suit your requirements.
+Visualization:
+Adjust visualization settings in visualization.py as needed.
+Contributing
+Contributions are welcome! If you'd like to contribute improvements or bug fixes:
+
+Fork the repository.
+Create your feature branch: git checkout -b feature/my-feature.
+Commit your changes: git commit -am 'Add new feature'.
+Push to the branch: git push origin feature/my-feature.
+Create a new Pull Request.
