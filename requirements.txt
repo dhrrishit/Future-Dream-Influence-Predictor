@@ -1,8 +1,9 @@
 google-generativeai
-spacy
+spacy>=3.0.0
 nltk
 pandas
 matplotlib
 seaborn
 wordcloud
+plotly
 streamlit
