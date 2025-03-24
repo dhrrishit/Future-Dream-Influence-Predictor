@@ -3,14 +3,32 @@ import os
 from emotion_detection import detect_emotions
 from dream_symbols import analyze_dream_symbols, generate_symbol_insights
 
-GOOGLE_API_KEY = "YOUR_API_KEY_HERE"  # yate jba for api https://makersuite.google.com/app/apikey
+# Hardcoded API key (replace with your actual API key)
+GOOGLE_API_KEY = "YOUR_API_KEY_HERE"
 
-genai.configure(api_key=GOOGLE_API_KEY)
+# Initialize the model
+model_initialized = False
+MODEL = None
 
-MODEL_NAME = "gemini-pro" 
-MODEL = genai.GenerativeModel(MODEL_NAME)
+def initialize_model():
+    global model_initialized, MODEL
+    if not GOOGLE_API_KEY or GOOGLE_API_KEY == "YOUR_API_KEY_HERE":
+        print("Warning: API key not set. Please edit the GOOGLE_API_KEY in gpt_predictor.py")
+        return False
+    
+    try:
+        genai.configure(api_key=GOOGLE_API_KEY)
+        MODEL = genai.GenerativeModel("gemini-pro")
+        model_initialized = True
+        return True
+    except Exception as e:
+        print(f"Failed to initialize GenAI model: {e}")
+        return False
 
 def predict_future_impact(dream_themes, sentiment, personality, dream_text=None, emotions=None, symbols=None):
+    if not model_initialized and not initialize_model():
+        return "Prediction unavailable. Please set the API key in gpt_predictor.py"
+    
     if dream_text and not emotions:
         emotion_data = detect_emotions(dream_text)
         emotions = emotion_data['emotion_scores']
@@ -18,7 +36,7 @@ def predict_future_impact(dream_themes, sentiment, personality, dream_text=None,
     if dream_text and not symbols:
         symbol_data = analyze_dream_symbols(dream_text, personality)
         symbols = symbol_data['symbols_found']
-# basically pre-prompt diya ase yate
+        
     prompt_content = f"""
 You are an expert dream analyst with deep knowledge of psychology, symbolism, and predictive analysis.
 
@@ -31,8 +49,6 @@ The user's personality profile:
 - Stress level: {personality.get('stress', 'N/A')}/10
 - Creativity: {personality.get('creativity', 'N/A')}/10
 - Analytical thinking: {personality.get('analytical', 'N/A')}/10
-- Emotional sensitivity: {personality.get('emotional', 'N/A')}/10
-- Preference for routine: {personality.get('routine', 'N/A')}/10
 """
 
     if emotions:
@@ -57,20 +73,27 @@ Make your response insightful, personalized, and psychologically sound while avo
     """
     
     try:
+        if not MODEL:
+            return "AI model not initialized. Please check your API key configuration."
+        
         response = MODEL.generate_content(prompt_content)
         prediction = response.text.strip()
         return prediction
     
     except Exception as e:
-        return f"Error during prediction: {e}"
+        return f"Error during prediction: {str(e)}. Please ensure your API key is valid."
 
 def analyze_dream_patterns(dream_history, personality):
+    if not model_initialized and not initialize_model():
+        return "Pattern analysis unavailable. Please set the API key in gpt_predictor.py"
+    
     if len(dream_history) < 3:
         return "Need at least 3 dreams to analyze patterns effectively."
     
-    symbol_insights = generate_symbol_insights(dream_history, personality)
-    
-    prompt_content = f"""
+    try:
+        symbol_insights = generate_symbol_insights(dream_history, personality)
+        
+        prompt_content = f"""
 You are an expert in dream pattern analysis and psychological insight.
 
 A user has provided their dream history with {len(dream_history)} recorded dreams.
@@ -91,12 +114,17 @@ Based on this information, provide an analysis of:
 4. How their personality traits might be influencing their dream patterns
 
 Make your analysis insightful, personalized, and psychologically sound.
-    """
-    
-    try:
+        """
+        
+        if not MODEL:
+            return "AI model not initialized. Please check your API key configuration."
+            
         response = MODEL.generate_content(prompt_content)
         analysis = response.text.strip()
         return analysis
-    
+        
     except Exception as e:
-        return f"Error during pattern analysis: {e}"
+        return f"Error during pattern analysis: {str(e)}. Please ensure your API key is valid."
+
+# Initialize the model when module is imported
+initialize_model()
