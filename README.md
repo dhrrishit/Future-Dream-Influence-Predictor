@@ -208,7 +208,6 @@ All required dependencies will be automatically installed by the setup script. T
 
 ## Author
 **Dhrrishit Deka**
-- **Website**: https://craftedcodex.pages.dev/
 - **Email**: dhrrishit@gmail.com
 - **GitHub**: https://github.com/dhrrishit
 - **LinkedIn**: https://www.linkedin.com/in/dhrrishitdeka/
