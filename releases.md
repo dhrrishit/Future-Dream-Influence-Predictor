@@ -1,6 +1,6 @@
 ## Releases
 
-### v1.2.0 (notun implementation junbur korisu) yate khali sba sob function properly set ase ne nai
+### v1.2.0 
 - Enhanced emotion detection with comprehensive emotion lexicon and intensity modifiers
 - Added detailed dream symbol analysis with interpretations for 25+ common symbols
 - Improved personalized recommendations based on emotion patterns and symbols
@@ -22,7 +22,7 @@
 - Expanded personality profile to include creativity and analytical thinking
 - Added emotion-based and symbol-based personalized recommendations
 
-### v1.0.0 (Initial) all okay ase yaar loge
+### v1.0.0 
 - Basic dream theme extraction
 - Sentiment analysis with VADER
 - Future influence prediction with Gemini Pro
